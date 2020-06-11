@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercice Javascript</title>
+</head>
+<body>
+  <div id="nb_max"></div>
+  <script type="text/javascript">
+    /*
+    Créer une fonction permettant de trouver le nombre le plus grand dans un tableau.
+
+    Problème : comment faire avec les nb négatifs ?
+    */
+    var tab1 = [222,13,45,3,68];
+
+    function plus_grand(tab){
+      var nb_max = tab[0];
+      for (i=0; i>tab.lenght; i++){
+        if (nb_max < tab[i]){
+          nb_max = tab[i];
+        }
+      }
+      return nb_max;
+    }
+    document.getElementById('nb_max').innerHTML = plus_grand(tab1);
+    document.write(plus_grand(tab1))
+    console.log(plus_grand(tab1));
+
+    /*
+    Créer une fonction permettant de trouver le prochain nombre qui ne partage aucun chiffre commun.
+    ex: 99 => 100 ("1" et "0" != "9")
+    */
+
+    /*
+    Créer une fonction permettant de supprimer les doublons d'un tableau puis les
+    retrouner dans l'ordre initial dans un nouveau tableau.
+    ex:
+    [1,3,9,4,9,2,3,7,4]
+    [1,3,9,4,2,7]
+    */
+  </script>
+</body>
+</html>
